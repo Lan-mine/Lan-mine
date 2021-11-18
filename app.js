@@ -3,7 +3,25 @@ let timeSecond = 50;
 if (timeleft < 25) {
     greeting = "Warning Less than ½ way to launch, time left = insert variable here"
 }
+
 displayTime(timeSecond)
+
+<input type="button" onclick="seconds=60;" value="Reset" />
+
+var reset = document.getElementById('reset');
+reset.onclick = function() {
+    seconds = 60;
+    clearInterval(interval);
+    interval = null;
+}
+
+
+var start = document.getElementById('Start');
+start.onclick = function() {
+    if (!interval) {
+        countdown('countDown');
+    }
+}
 
 const countDown = setInterval (()=>{
  timeSecond--;
