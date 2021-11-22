@@ -4,6 +4,19 @@ if (timeleft < 25) {
     greeting = "Warning Less than ½ way to launch, time left = insert variable here"
 }
 
+Scanner scanner1 = new Scanner( System.in );
+
+        //input first name
+         System.out.print("Enter your first name: ");
+         firstName = scanner1.nextLine();
+
+         System.out.print("Enter your last name: ");
+         lastName = scanner1.nextLine();
+
+        //output last name
+         System.out.print("Your first name is " + firstName + " and your last name is "+ lastName);
+
+
 displayTime(timeSecond)
 
 <input type="button" onclick="seconds=60;" value="Reset" />
